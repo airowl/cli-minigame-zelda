@@ -1,0 +1,17 @@
+{
+    "name": "demo-game/zelda",
+    "description": "Game zelda",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "DemoGame\\Zelda\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Airowl",
+            "email": "airowl.gasga@gmail.com"
+        }
+    ],
+    "require": {}
+}

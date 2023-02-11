@@ -1,0 +1,20 @@
+#!/usr/bin/env php
+<?php
+
+use DemoGame\Zelda\Commands\Play;
+use DemoGame\Zelda\ReadFile\Read;
+
+require __DIR__.'/../vendor/autoload.php';
+
+switch ($argv[1]){
+    case 'play':
+        $read = new Read('file.txt');
+        print $read->read();
+        print "\n Sei nella stanza 1";
+        $application = new Play('Enter Command');
+        $application->run();
+        break;
+    default:
+        print 'Write "play" to start the game';
+}
+

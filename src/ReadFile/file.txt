@@ -1,0 +1,5 @@
+La principessa del regno di CPeria è stata catturata da un mago malvagio e rinchiusa in un castello sorvegliato da mostri. Il tuo compito è liberarla e riportarla fuori dal castello. Il castello dispone di 9 camere. 
+Il gioco inizia con te che ti trovi nella stanza 1. 
+La stanza 1 aveva l'uscita per il castello a ovest. Alcune camere sono collegate tra loro. 
+Ogni stanza aveva un muro a nord, sud, est o ovest o un'altra stanza (vedi labirinto sotto). La principessa è chiusa nella stanza 9. 
+Ci sono due mostri nel castello che devono essere uccisi per raggiungere la principessa. Ogni mostro è a guardia di un percorso magico e ogni volta che uccidi un mostro, questo percorso appare e due stanze vengono collegate tra loro. Fortunatamente, i mostri sono piuttosto docili e non ti attaccano a meno che tu non li attacchi.
