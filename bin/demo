@@ -8,13 +8,13 @@ require __DIR__.'/../vendor/autoload.php';
 
 switch ($argv[1]){
     case 'play':
-        $read = new Read('file.txt');
+        $read = new Read('intro.txt');
         print $read->read();
         print "\n Sei nella stanza 1";
         $application = new Play('Enter Command');
         $application->run();
         break;
     default:
-        print 'Write "play" to start the game';
+        print 'Scrivi "play" per iniziare a giocare';
 }
 

@@ -342,11 +342,7 @@ class Play
                     $part = 'westPart';
 
                     $room = Room::checkActualRoom($hero->actualCoor, $rooms);
-                    if ($room->nRoom == '9') {
-                        //$read = new Read('file.txt');
-                        print "Hai salvato la principessa e completato il gioco \n";
-                        break;
-                    }
+
                     if (Room::checkFreeWay($room->directions, $part)) {
 
                         if(!isset($room->monster) || $room->monster->isDie){
@@ -419,7 +415,7 @@ class Play
                         print "Il tuo zaino è vuoto" . "\n";
                     } else {
                         $room->item = $itemDropped;
-                        print "Hai lasciato cadere; " . $room->item->name . "\n";
+                        print "Hai lasciato cadere: " . $room->item->name . "\n";
                     }
                     break;
                 case 'attack':
@@ -427,7 +423,6 @@ class Play
                     
                     if (isset($room->monster) && !$room->monster->isDie) {
                         $res = $hero->attack($room->monster->weakness);
-                        var_dump($res);
                         if($res){
                             print "Hai ucciso il mostro" . "\n";
                             print "Le vie si sono sbloccate" . "\n";
